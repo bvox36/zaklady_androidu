@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="dark_grey">#777777</color>
+    <color name="white">#ffffff</color>
+    <color name="transcluent_background">#55000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="driver_detail_background">#e7e7e7</color>
+    <color name="driver_detail_text_color">#a09244</color>
+	<color name="sliding_menu_bckg">#383838</color>
+	<color name="light_gray">#C0C0C0</color>
+	<color name="taxi_yellow">#FFD800</color>
+	<color name="red">#FF0000</color>
+</resources>

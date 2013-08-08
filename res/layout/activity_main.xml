@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding = "10dp"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextNazev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/label_nazev"
+        android:inputType="textCapSentences" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextObsah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonSmazat"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextNazev"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/label_obsah"
+        android:inputType="textCapSentences" />
+
+    <Button
+        android:id="@+id/buttonSmazat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/label_smazat" />
+
+    <ProgressBar
+        android:id="@+id/progressBarUkladam"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24dp" />
+
+    <Button
+        android:id="@+id/buttonUlozit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/label_ulozit" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Základy Androidu</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="label_ulozit">Uložit</string>
+	<string name="label_nazev">Název poznámky</string>
+	<string name="label_obsah">Zadejte text poznámky</string>
+	<string name="label_smazat">Smazat</string>
+	<string name="toast_smazat">Smazáno</string>
+</resources>
