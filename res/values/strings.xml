@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Základy Androidu</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-	<string name="label_ulozit">Uložit</string>
-	<string name="label_nazev">Název poznámky</string>
-	<string name="label_obsah">Zadejte text poznámky</string>
-	<string name="label_smazat">Smazat</string>
-	<string name="toast_smazat">Smazáno</string>
+    <string name="label_ulozit">Uložit</string>
+    <string name="label_nazev">Název poznámky</string>
+    <string name="label_obsah">Zadejte text poznámky</string>
+    <string name="label_smazat">Smazat</string>
+    <string name="toast_smazat">Smazáno</string>
+    <string name="label_frame"><b>Toto je Frame Layout</b></string>
+    <string name="uvitani">Dobrý den, %1$s! Máte %2$d nových zpráv.</string>
+    <string name="uvozovky">Takto \"lze vložit uvozovky\"</string>
+
+    <string-array name="mesta_array">
+        <item>Praha</item>
+        <item>Brno</item>
+        <item>Ostrava</item>
+    </string-array>
+
+    <plurals name="numberOfCars">
+        <item quantity="one">Ve Vaší garáži je jeden automobil</item>
+        <item quantity="few">Ve Vaší garáži jsou %d automobily</item>
+        <item quantity="other">Ve Vaší garáži je %d automobilů</item>
+    </plurals>
+
+    <string name="scroll_view_info">Potomek třídy FrameLayout, což znamená, že je určen pro vložení jednoho dětského view.
+Dětské view může být libovolně složitý layout libovolného typu, nebo jednoduché View, obecně každý potomek třídy View.
+Pokud je dětské view větší, než rozměry ScrollView, automaticky se zobrazí scroll bar a obsah lze posouvat.
+Umožňuje pouze vertikální posuv, potřebujete-li horizontální posuv, použijte třídu HorizontalScrollView
+Typické použití je ve spojení s lineárním layoutem
+Nikdy nepoužívejte kombinaci ScrollView a ListView (viz další lekce), každý z těchto prvků má svou implementaci vertikálního posuvu na úplně jiném principu. Pro začátečníka nemusí být rozdíl mezi ScrollView a ListView příliš zřejmý. Oba prvky přece zajišťují vertikální posuv obsahu po displeji. Rozdíl tu však je a to značný. ScrollView vždy načítá celý svůj obsah, kdežto ListView pouze tehdy, je-li potřeba ho skutečně zobrazit uživateli, čehož dosahuje pomocí tzv. Adaptéru, který, spolu s ListView, podrobně prozkoumáte v příští lekci.
+Hlavním nežádoucím důsledkem kombinace ScrollView a ListView by bylo, že byste zcela obešli optimalizace třídy ListView při zobrazování velkého množství položek. De-facto by tak ListView vyplnil ScrollView, jeho všechny položky by byly viditelné, což by mělo za následek značné snížení odezvy a v případě obrázků velmi pravděpodobně i OutOfMemory výjimky.</string>
+
 </resources>

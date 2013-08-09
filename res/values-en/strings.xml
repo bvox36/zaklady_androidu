@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="numberOfCars">
+        <item quantity="one">There is one car in your garage</item>
+        <item quantity="other">There are %d cars in your garage</item>
+    </plurals>
+
+</resources>

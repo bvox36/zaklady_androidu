@@ -1,53 +1,60 @@
 package com.kurzandroidu.zakladyandroidu;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 
 public class MainActivity extends Activity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-	}
+    @SuppressWarnings("unused")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_scrollview);
 
-	@Override
-	public void onStart() {
-		super.onStart();
-	}
+        String text = String.format(getResources().getString(R.string.uvitani), "Jméno", 10);
 
-	@Override
-	public void onResume() {
-		super.onResume();
-	}
+        String[] mesta = getResources().getStringArray(R.array.mesta_array);
 
-	@Override
-	public void onPause() {
-		super.onPause();
-	}
+        String carsInGarage = getResources().getQuantityString(R.plurals.numberOfCars, 2, 2);
+    }
 
-	@Override
-	public void onStop() {
-		super.onStop();
-	}
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
 
-	@Override
-	public void onRestart() {
-		super.onRestart();
-	}
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
 
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-	}
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
 
-	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-	}
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
 
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		super.onRestoreInstanceState(savedInstanceState);
-	}
+    @Override
+    public void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
 }
