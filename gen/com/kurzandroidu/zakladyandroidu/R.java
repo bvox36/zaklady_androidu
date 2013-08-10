@@ -43,12 +43,15 @@ public final class R {
         public static final int TextView02=0x7f0b000e;
         public static final int TextView03=0x7f0b000f;
         public static final int TextView04=0x7f0b0010;
-        public static final int action_settings=0x7f0b0020;
+        public static final int action_settings=0x7f0b0024;
+        public static final int buttonOdebrat=0x7f0b0021;
+        public static final int buttonPridat=0x7f0b0020;
         public static final int buttonSmazat=0x7f0b0003;
         public static final int buttonUlozit=0x7f0b0005;
         public static final int buttons=0x7f0b0007;
         public static final int editTextNazev=0x7f0b0001;
         public static final int editTextObsah=0x7f0b0002;
+        public static final int fragmentContainer=0x7f0b0022;
         public static final int progressBarUkladam=0x7f0b0004;
         public static final int scrollView=0x7f0b0006;
         public static final int tableLayout=0x7f0b0008;
@@ -70,6 +73,7 @@ public final class R {
         public static final int textView23=0x7f0b001d;
         public static final int textView24=0x7f0b001e;
         public static final int textView25=0x7f0b001f;
+        public static final int textViewFragmentNumber=0x7f0b0023;
         public static final int textViewNadpis=0x7f0b000a;
     }
     public static final class layout {
@@ -79,7 +83,10 @@ public final class R {
         public static final int activity_poznamka=0x7f030003;
         public static final int activity_scrollview=0x7f030004;
         public static final int activity_table=0x7f030005;
-        public static final int view_poznamka_merged=0x7f030006;
+        public static final int fragment_layout_dynamic=0x7f030006;
+        public static final int fragment_layout_static=0x7f030007;
+        public static final int fragment_pocitaci=0x7f030008;
+        public static final int view_poznamka_merged=0x7f030009;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -91,15 +98,17 @@ public final class R {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060002;
-        public static final int label_frame=0x7f060008;
+        public static final int label_frame=0x7f06000a;
         public static final int label_nazev=0x7f060004;
         public static final int label_obsah=0x7f060005;
+        public static final int label_odebrat=0x7f060008;
+        public static final int label_pridat=0x7f060007;
         public static final int label_smazat=0x7f060006;
         public static final int label_ulozit=0x7f060003;
-        public static final int scroll_view_info=0x7f06000b;
-        public static final int toast_smazat=0x7f060007;
-        public static final int uvitani=0x7f060009;
-        public static final int uvozovky=0x7f06000a;
+        public static final int scroll_view_info=0x7f06000d;
+        public static final int toast_smazat=0x7f060009;
+        public static final int uvitani=0x7f06000b;
+        public static final int uvozovky=0x7f06000c;
     }
     public static final class style {
         /** 

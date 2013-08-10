@@ -8,6 +8,8 @@
     <string name="label_nazev">Název poznámky</string>
     <string name="label_obsah">Zadejte text poznámky</string>
     <string name="label_smazat">Smazat</string>
+    <string name="label_pridat">Přidat</string>
+    <string name="label_odebrat">Odebrat</string>
     <string name="toast_smazat">Smazáno</string>
     <string name="label_frame"><b>Toto je Frame Layout</b></string>
     <string name="uvitani">Dobrý den, %1$s! Máte %2$d nových zpráv.</string>
