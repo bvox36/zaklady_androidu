@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="3"
+    android:rowCount="3" >
+
+    <TextView
+        android:background="@color/red"
+        android:text="0,0" />
+
+    <TextView
+        android:background="@color/green"
+        android:text="0,1 širší" />
+
+    <TextView
+        android:background="@color/gray"
+        android:text="0,2" />
+
+    <TextView
+        android:background="@color/green"
+        android:text="1,0" />
+
+    <TextView
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/gray"
+        android:text="1,1" />
+
+    <TextView
+        android:background="@color/orange"
+        android:text="1,2" />
+
+    <TextView
+        android:background="@color/red"
+        android:text="2,0" />
+
+    <TextView
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/green"
+        android:text="2,1" />
+
+    <TextView
+        android:background="@color/gray"
+        android:text="2,2 širší" />
+
+</GridLayout>

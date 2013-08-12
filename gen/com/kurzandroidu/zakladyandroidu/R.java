@@ -43,10 +43,10 @@ public final class R {
         public static final int TextView02=0x7f0b000f;
         public static final int TextView03=0x7f0b0010;
         public static final int TextView04=0x7f0b0011;
-        public static final int akce1=0x7f0b0027;
-        public static final int akce2=0x7f0b0028;
-        public static final int akce3=0x7f0b0029;
-        public static final int akce4=0x7f0b002b;
+        public static final int akce1=0x7f0b0029;
+        public static final int akce2=0x7f0b002a;
+        public static final int akce3=0x7f0b002b;
+        public static final int akce4=0x7f0b002d;
         public static final int buttonAlert=0x7f0b0000;
         public static final int buttonOdebrat=0x7f0b0022;
         public static final int buttonPridat=0x7f0b0021;
@@ -58,14 +58,16 @@ public final class R {
         public static final int editTextObsah=0x7f0b0003;
         public static final int fragment=0x7f0b0024;
         public static final int fragmentContainer=0x7f0b0023;
-        public static final int group=0x7f0b002a;
+        public static final int group=0x7f0b002c;
         public static final int progressBarUkladam=0x7f0b0005;
+        public static final int root=0x7f0b0027;
         public static final int scrollView=0x7f0b0007;
         public static final int tableLayout=0x7f0b0009;
         public static final int tableRowAPI=0x7f0b000c;
         public static final int tableRowHttp=0x7f0b0013;
         public static final int tableRowHttps=0x7f0b001a;
         public static final int tableRowNadpis=0x7f0b000a;
+        public static final int text=0x7f0b0028;
         public static final int textView=0x7f0b0001;
         public static final int textView05=0x7f0b0012;
         public static final int textView10=0x7f0b0014;
@@ -86,15 +88,17 @@ public final class R {
     public static final class layout {
         public static final int activity_dialog=0x7f030000;
         public static final int activity_frame=0x7f030001;
-        public static final int activity_include=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_poznamka=0x7f030004;
-        public static final int activity_scrollview=0x7f030005;
-        public static final int activity_table=0x7f030006;
-        public static final int fragment_layout_dynamic=0x7f030007;
-        public static final int fragment_layout_static=0x7f030008;
-        public static final int fragment_pocitaci=0x7f030009;
-        public static final int view_poznamka_merged=0x7f03000a;
+        public static final int activity_grid=0x7f030002;
+        public static final int activity_include=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_poznamka=0x7f030005;
+        public static final int activity_scrollview=0x7f030006;
+        public static final int activity_table=0x7f030007;
+        public static final int fragment_layout_dynamic=0x7f030008;
+        public static final int fragment_layout_static=0x7f030009;
+        public static final int fragment_pocitaci=0x7f03000a;
+        public static final int view_poznamka_merged=0x7f03000b;
+        public static final int view_toast=0x7f03000c;
     }
     public static final class menu {
         public static final int context_menu=0x7f0a0000;

@@ -9,7 +9,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.PopupMenu;
 
 public class MainActivity extends Activity implements OnMenuItemClickListener, PopupMenu.OnMenuItemClickListener {
@@ -18,7 +17,7 @@ public class MainActivity extends Activity implements OnMenuItemClickListener, P
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_grid);
 
         String text = String.format(getResources().getString(R.string.uvitani), "Jméno", 10);
 
@@ -26,22 +25,22 @@ public class MainActivity extends Activity implements OnMenuItemClickListener, P
 
         String carsInGarage = getResources().getQuantityString(R.plurals.numberOfCars, 2, 2);
 
-        registerForContextMenu(findViewById(R.id.buttonUlozit));
-
-        findViewById(R.id.buttonSmazat).setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                PopupMenu popup = new PopupMenu(MainActivity.this, v);
-                MenuInflater inflater = popup.getMenuInflater();
-                inflater.inflate(R.menu.popup_menu, popup.getMenu());
-                popup.setOnMenuItemClickListener(MainActivity.this);
-                popup.show();
-
-            }
-
-        });
+        //        registerForContextMenu(findViewById(R.id.buttonUlozit));
+        //
+        //        findViewById(R.id.buttonSmazat).setOnClickListener(new OnClickListener() {
+        //
+        //            @Override
+        //            public void onClick(View v) {
+        //
+        //                PopupMenu popup = new PopupMenu(MainActivity.this, v);
+        //                MenuInflater inflater = popup.getMenuInflater();
+        //                inflater.inflate(R.menu.popup_menu, popup.getMenu());
+        //                popup.setOnMenuItemClickListener(MainActivity.this);
+        //                popup.show();
+        //
+        //            }
+        //
+        //        });
 
     }
 
