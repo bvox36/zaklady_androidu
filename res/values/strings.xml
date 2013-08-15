@@ -26,6 +26,9 @@
     <string name="dlg_btn_no">No</string>
     <string name="dlg_btn_cancel">Cancel</string>
     <string name="dlg_btn_ok">OK</string>
+    <string name="empty_list">Prázdný seznam</string> 
+    <string name="basic_view">Základní</string>
+    <string name="advanced_view">Pokročilé</string>
 
     <string-array name="mesta_array">
         <item>Praha</item>
