@@ -17,24 +17,21 @@ public class ActivitySimpleListView extends Activity {
         setContentView(R.layout.activity_listview);
 
         final ListView listview = (ListView) findViewById(R.id.listView);
-        String[] values = new String[] { "TextView", "Button", "CheckBox",
-                "RadioButton", "CheckedTextView", "Spinner", "ProgressBar",
-                "RatingBar", "SeekBar", "Switch", "EditText", "ImageView",
-                "ImageButton", "WebView", "MapView", "VideoView", "TimePicker", };
+        String[] values = new String[] { "TextView", "Button", "CheckBox", "RadioButton", "CheckedTextView", "Spinner",
+                "ProgressBar", "RatingBar", "SeekBar", "Switch", "EditText", "ImageView", "ImageButton", "WebView",
+                "MapView", "VideoView", "TimePicker", };
 
         final List<String> list = new ArrayList<String>(values.length);
         for (int i = 0; i < values.length; ++i) {
             list.add(values[i]);
         }
 
-        final ArrayAdapter adapter = new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1, list);
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adapter);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, final View view,
-                    int position, long id) {
+            public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
                 final String item = (String) parent.getItemAtPosition(position);
 
                 list.remove(item);

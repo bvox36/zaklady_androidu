@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Základy Androidu</string>
+    <string name="activity_about_name">O aplikaci</string>
     <string name="action_1">Akce 1</string>
     <string name="action_2">Akce 2</string>
     <string name="action_3">Akce 3</string>
@@ -29,11 +30,24 @@
     <string name="empty_list">Prázdný seznam</string> 
     <string name="basic_view">Základní</string>
     <string name="advanced_view">Pokročilé</string>
+    
+    <!-- Action bar -->
+    <string name="action_bar_title">ActionBar </string> 
+    <string name="action_rotate">Otočení</string>
+    <string name="action_call">Telefon</string>
+    <string name="action_camera">Kamera</string>
+    <string name="action_share">Sdílet</string>
+    <string name="action_search">Hledat</string>
+    <string name="action_help">O aplikaci</string>
 
     <string-array name="mesta_array">
         <item>Praha</item>
         <item>Brno</item>
         <item>Ostrava</item>
+        <item>Olomouc</item>
+        <item>Opava</item>
+        <item>Pardubice</item>
+        <item>Plzeň</item>
     </string-array>
 
     <plurals name="numberOfCars">
@@ -50,4 +64,5 @@ Typické použití je ve spojení s lineárním layoutem
 Nikdy nepoužívejte kombinaci ScrollView a ListView (viz další lekce), každý z těchto prvků má svou implementaci vertikálního posuvu na úplně jiném principu. Pro začátečníka nemusí být rozdíl mezi ScrollView a ListView příliš zřejmý. Oba prvky přece zajišťují vertikální posuv obsahu po displeji. Rozdíl tu však je a to značný. ScrollView vždy načítá celý svůj obsah, kdežto ListView pouze tehdy, je-li potřeba ho skutečně zobrazit uživateli, čehož dosahuje pomocí tzv. Adaptéru, který, spolu s ListView, podrobně prozkoumáte v příští lekci.
 Hlavním nežádoucím důsledkem kombinace ScrollView a ListView by bylo, že byste zcela obešli optimalizace třídy ListView při zobrazování velkého množství položek. De-facto by tak ListView vyplnil ScrollView, jeho všechny položky by byly viditelné, což by mělo za následek značné snížení odezvy a v případě obrázků velmi pravděpodobně i OutOfMemory výjimky.</string>
 
+    <string name="label_about"><b>e-learningový kurz\n\n Vývoj nativních aplikaci pro platformu Android \n web: www.integra-it.cz \n email: info@integra-it.cz \n\n Copyright 2014</b></string>
 </resources>

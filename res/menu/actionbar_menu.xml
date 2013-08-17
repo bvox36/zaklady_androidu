@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/actionRotate"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_rotate"/>
+    <item
+        android:id="@+id/actionCall"
+        android:icon="@android:drawable/ic_menu_call"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_call"/>
+    <item
+        android:id="@+id/actionCamera"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_camera"/>
+    <item
+        android:id="@+id/actionShare"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_share"/>
+    <item
+        android:id="@+id/actionSearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_search"/>
+    <item
+        android:id="@+id/actionHelp"
+        android:icon="@android:drawable/ic_menu_help"
+        android:orderInCategory="5"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_help"/>
+</menu>

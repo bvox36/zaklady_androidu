@@ -5,7 +5,6 @@
     android:background="@drawable/list_bckg_selector"
     android:gravity="center"
     android:padding="10dp" >
-
     <ImageView
         android:id="@+id/imageViewIcon"
         android:layout_width="wrap_content"
@@ -13,23 +12,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:src="@drawable/ic_launcher" />
-
     <TextView
         android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageViewIcon"
-        android:layout_toRightOf="@+id/imageViewIcon"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
+        android:layout_toRightOf="@+id/imageViewIcon" />
     <TextView
         android:id="@+id/textViewLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textViewName"
-        android:layout_alignParentRight="true"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
+        android:layout_alignParentRight="true" />
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
@@ -37,5 +31,4 @@
         android:layout_alignLeft="@+id/textViewDescription"
         android:layout_alignTop="@+id/imageViewIcon"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
 </RelativeLayout>
