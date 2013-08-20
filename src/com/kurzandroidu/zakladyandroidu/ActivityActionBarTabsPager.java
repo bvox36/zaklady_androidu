@@ -22,7 +22,7 @@ public class ActivityActionBarTabsPager extends Activity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actionbar_tab_pager);
+        setContentView(R.layout.activity_actionbar_pager);
 
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(new CustomFragmentAdapter(this

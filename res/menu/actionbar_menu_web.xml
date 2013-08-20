@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/actionLoad"
+        android:icon="@drawable/ic_menu_send"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_load"/>
+    <item
+        android:id="@+id/actionBack"
+        android:icon="@drawable/ic_menu_back"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_back" 
+        android:enabled="false"/>
+    <item
+        android:id="@+id/actionForward"
+        android:icon="@drawable/ic_menu_forward"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_forward" 
+        android:enabled="false"/>
+    <item
+        android:id="@+id/actionHome"
+        android:icon="@drawable/ic_menu_home"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_home"/>
+</menu>

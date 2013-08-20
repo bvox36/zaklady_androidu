@@ -15,6 +15,7 @@
     <string name="label_pridat">Přidat</string>
     <string name="label_odebrat">Odebrat</string>
     <string name="label_odeslat">Odeslat</string>
+    <string name="label_enter_url">Zadejte URL</string>
     <string name="toast_smazat">Smazáno</string>
     <string name="label_frame"><b>Toto je Frame Layout</b></string>
     <string name="uvitani">Dobrý den, %1$s! Máte %2$d nových zpráv.</string>
@@ -27,12 +28,15 @@
     <string name="dlg_btn_no">No</string>
     <string name="dlg_btn_cancel">Cancel</string>
     <string name="dlg_btn_ok">OK</string>
-    <string name="empty_list">Prázdný seznam</string> 
+    <string name="empty_list">Prázdný seznam</string>
     <string name="basic_view">Základní</string>
     <string name="advanced_view">Pokročilé</string>
-    
+    <string name="default_url">https://www.google.cz/</string>
+    <string name="malformed_url">Neplatná URL adresa!</string>
+    <string name="label_enter_address">Zadejte adresu</string>
+
     <!-- Action bar -->
-    <string name="action_bar_title">ActionBar </string> 
+    <string name="action_bar_title">ActionBar </string>
     <string name="action_rotate">Otočení</string>
     <string name="action_call">Telefon</string>
     <string name="action_camera">Kamera</string>
@@ -40,6 +44,17 @@
     <string name="action_search">Hledat</string>
     <string name="action_help">O aplikaci</string>
 
+    <!-- Action bar webview -->
+    <string name="action_load">Načíst</string>
+    <string name="action_back">Zpět</string>
+    <string name="action_forward">Vpřed</string>
+    <string name="action_home">Domů</string>
+    
+    <!-- Action bar mapview -->
+    <string name="action_normal_map">Normální</string>
+    <string name="action_satellite_map">Satelitní</string>
+    <string name="action_terrain_map">Terénní</string>
+    
     <string-array name="mesta_array">
         <item>Praha</item>
         <item>Brno</item>
@@ -63,6 +78,6 @@ Umožňuje pouze vertikální posuv, potřebujete-li horizontální posuv, použ
 Typické použití je ve spojení s lineárním layoutem
 Nikdy nepoužívejte kombinaci ScrollView a ListView (viz další lekce), každý z těchto prvků má svou implementaci vertikálního posuvu na úplně jiném principu. Pro začátečníka nemusí být rozdíl mezi ScrollView a ListView příliš zřejmý. Oba prvky přece zajišťují vertikální posuv obsahu po displeji. Rozdíl tu však je a to značný. ScrollView vždy načítá celý svůj obsah, kdežto ListView pouze tehdy, je-li potřeba ho skutečně zobrazit uživateli, čehož dosahuje pomocí tzv. Adaptéru, který, spolu s ListView, podrobně prozkoumáte v příští lekci.
 Hlavním nežádoucím důsledkem kombinace ScrollView a ListView by bylo, že byste zcela obešli optimalizace třídy ListView při zobrazování velkého množství položek. De-facto by tak ListView vyplnil ScrollView, jeho všechny položky by byly viditelné, což by mělo za následek značné snížení odezvy a v případě obrázků velmi pravděpodobně i OutOfMemory výjimky.</string>
-
     <string name="label_about"><b>e-learningový kurz\n\n Vývoj nativních aplikaci pro platformu Android \n web: www.integra-it.cz \n email: info@integra-it.cz \n\n Copyright 2014</b></string>
+
 </resources>
