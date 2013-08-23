@@ -17,6 +17,15 @@ public class ActivityList extends ListActivity {
                 "RatingBar", "SeekBar", "Switch", "EditText", "ImageView",
                 "ImageButton", "WebView", "MapView", "VideoView", "TimePicker", };
 
+        Bundle extras = getIntent().getExtras();
+
+        if (extras != null) {
+            String[] strings = extras.getStringArray("strings");
+
+            if (strings != null)
+                values = strings;
+        }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, values);
 

@@ -33,8 +33,6 @@ public class ActivityMapView extends Activity {
         mMap.setMyLocationEnabled(true);
         mMap.addMarker(new MarkerOptions().position(PRAGUE).title("Praha"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(PRAGUE, 12));
-        mMap.se
-
     }
 
     @Override

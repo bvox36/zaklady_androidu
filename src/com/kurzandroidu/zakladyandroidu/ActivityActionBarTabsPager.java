@@ -1,7 +1,5 @@
 package com.kurzandroidu.zakladyandroidu;
 
-import java.lang.reflect.Field;
-
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
@@ -12,7 +10,6 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.ViewConfiguration;
 
 public class ActivityActionBarTabsPager extends Activity {
 
@@ -30,7 +27,7 @@ public class ActivityActionBarTabsPager extends Activity {
 
         mViewPager.setPageTransformer(true, new DepthPageTransformer());
 
-        getOverflowMenu();
+        Utils.getOverflowMenu(this);
         getActionBar().setTitle(R.string.action_bar_title);
 
         getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -70,22 +67,6 @@ public class ActivityActionBarTabsPager extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.actionbar_menu, menu);
         return true;
-    }
-
-    private void getOverflowMenu() {
-
-        try {
-            ViewConfiguration config = ViewConfiguration.get(this);
-            Field menuKeyField = ViewConfiguration.class
-                    .getDeclaredField("sHasPermanentMenuKey");
-            if (menuKeyField != null) {
-                menuKeyField.setAccessible(true);
-                menuKeyField.setBoolean(config, false);
-            }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     @Override

@@ -4,6 +4,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.IntentFilter.MalformedMimeTypeException;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -20,9 +23,11 @@ import android.widget.Toast;
 
 public class ActivityWebView extends Activity {
 
-    private WebView     mWebView;
-    private EditText    mUrl;
-    private ProgressBar mProgressBar;
+    private WebView      mWebView;
+    private EditText     mUrl;
+    private ProgressBar  mProgressBar;
+
+    private IntentFilter mIntentFilter;
 
     private class DocumentWebViewClient extends WebViewClient {
         @Override
@@ -65,6 +70,16 @@ public class ActivityWebView extends Activity {
             mWebView.loadUrl(bundle.getString("url"));
         else
             mWebView.loadUrl(getString(R.string.default_url));
+
+        mIntentFilter = new IntentFilter(Intent.ACTION_SEND);
+        mIntentFilter.addCategory(Intent.CATEGORY_DEFAULT);
+
+        try {
+            mIntentFilter.addDataType("text/plain");
+        }
+        catch (MalformedMimeTypeException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

@@ -1,7 +1,5 @@
 package com.kurzandroidu.zakladyandroidu;
 
-import java.lang.reflect.Field;
-
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
@@ -10,7 +8,6 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.ViewConfiguration;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
@@ -24,7 +21,7 @@ public class ActivityActionBarDropDown extends Activity implements
         super.onCreate(savedInstanceState);
         this.setTheme(android.R.style.Theme_Holo_Light);
         setContentView(R.layout.activity_actionbar);
-        getOverflowMenu();
+        Utils.getOverflowMenu(this);
         getActionBar().setDisplayShowHomeEnabled(false);
         getActionBar().setDisplayShowTitleEnabled(false);
         getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
@@ -35,22 +32,6 @@ public class ActivityActionBarDropDown extends Activity implements
         mAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         getActionBar().setListNavigationCallbacks(mAdapter, this);
-    }
-
-    private void getOverflowMenu() {
-
-        try {
-            ViewConfiguration config = ViewConfiguration.get(this);
-            Field menuKeyField = ViewConfiguration.class
-                    .getDeclaredField("sHasPermanentMenuKey");
-            if (menuKeyField != null) {
-                menuKeyField.setAccessible(true);
-                menuKeyField.setBoolean(config, false);
-            }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     @Override

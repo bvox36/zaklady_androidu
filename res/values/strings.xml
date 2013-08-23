@@ -11,11 +11,17 @@
     <string name="label_ulozit">Uložit</string>
     <string name="label_nazev">Název poznámky</string>
     <string name="label_obsah">Zadejte text poznámky</string>
+    <string name="label_enter_text">Zadejte text</string>
     <string name="label_smazat">Smazat</string>
     <string name="label_pridat">Přidat</string>
     <string name="label_odebrat">Odebrat</string>
     <string name="label_odeslat">Odeslat</string>
+    <string name="label_start_activity">Předat aktivitě</string>
+    <string name="label_return_to_activity">Předat rodičovské aktivitě</string>
+    <string name="label_share">Sdílet</string>
+    <string name="label_prijata_zprava">Přijatá zpráva:</string>
     <string name="label_enter_url">Zadejte URL</string>
+    <string name="label_set_msg_for_parent_activity">Vložte zprávu pro rodičovskou aktivitu</string>
     <string name="toast_smazat">Smazáno</string>
     <string name="label_frame"><b>Toto je Frame Layout</b></string>
     <string name="uvitani">Dobrý den, %1$s! Máte %2$d nových zpráv.</string>
@@ -54,6 +60,23 @@
     <string name="action_normal_map">Normální</string>
     <string name="action_satellite_map">Satelitní</string>
     <string name="action_terrain_map">Terénní</string>
+    
+    <!-- Action bar intents -->
+    <string name="action_list_activity">Zobrazit seznam</string>
+    <string name="action_intent_share">Sdílet zprávu</string>
+    <string name="action_start_for_result">Předat a získat výsledek</string>
+    <string name="action_service">Spustit službu</string>
+    <string name="action_browser">Spustit prohlížeč</string>
+    <string name="action_take_photo">Vyfotit</string>
+    <string name="action_send_inent_static">Pošli Intent Static</string>
+    <string name="action_send_inent_dynamic">Pošli Intent Dynamic</string>
+    <string name="action_send_notification">Zobraz notifikaci</string>
+    
+    <!-- Action bar notifications -->
+    <string name="action_show_normal_notification">Normální notifikace</string>
+    <string name="action_show_big_notification">Velká notifikace</string>
+    <string name="action_show_notification_progress">Notifikace s progres barem</string>
+    <string name="action_show_notification_activity">Notifikace s activity indikátorem</string>
     
     <string-array name="mesta_array">
         <item>Praha</item>
