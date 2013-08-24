@@ -36,7 +36,7 @@
             android:value="AIzaSyAVECElYenDugJRPWgCJinIaRAFg-JggqM" /> <!-- MAP KEY - nutno zmenit -->
 
         <activity
-            android:name="com.kurzandroidu.zakladyandroidu.ActivityNotifications"
+            android:name="com.kurzandroidu.zakladyandroidu.ActivityServices"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,7 +55,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kurzandroidu.zakladyandroidu.ActivityActionBarTabsPager" />
         </activity>
-        <activity android:name=".ActivityList" >
+        <activity
+            android:name=".ActivityListCustom"
+            android:parentActivityName=".ActivityNotifications" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kurzandroidu.zakladyandroidu.ActivityNotifications" />
+        </activity>
+        <activity android:name=".ActivityActionBarTabsPager" >
         </activity>
         <activity
             android:name=".ActivityWebView"
@@ -69,12 +76,18 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="StaticBroadcastReceiver"> 
+        <receiver android:name="StaticBroadcastReceiver" >
             <intent-filter>
                 <action android:name="com.kurzandroidu.zakladyandroidu.action.SEND_MSG1" />
-                </intent-filter>
+            </intent-filter>
         </receiver>
-        
+
+        <service android:name=".CustomService" >
+        </service>
+        <service android:name=".ForegroundService" >
+        </service>
+        <service android:name=".CustomIntentService" >
+        </service>
     </application>
 
 </manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/actionStartService"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_start_service"/>
+    <item
+        android:id="@+id/actionStopService"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_stop_service"/>
+    <item
+        android:id="@+id/actionStartForeground"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_start_foreground"/>
+    <item
+        android:id="@+id/actionStopForeground"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_stop_foreground"/>
+       <item
+        android:id="@+id/actionStartIntentService"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_start_intent_service"/>
+</menu>

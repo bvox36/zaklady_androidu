@@ -18,6 +18,7 @@ public final class R {
     }
     public static final class array {
         public static final int mesta_array=0x7f0c0000;
+        public static final int view_types=0x7f0c0001;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1159,14 +1160,14 @@ containing a value of this type.
         public static final int TextView02=0x7f060060;
         public static final int TextView03=0x7f060061;
         public static final int TextView04=0x7f060062;
-        public static final int actionBack=0x7f06009a;
+        public static final int actionBack=0x7f06009e;
         public static final int actionCall=0x7f060085;
         public static final int actionCamera=0x7f060086;
-        public static final int actionForward=0x7f06009b;
+        public static final int actionForward=0x7f06009f;
         public static final int actionHelp=0x7f060089;
-        public static final int actionHome=0x7f06009c;
+        public static final int actionHome=0x7f0600a0;
         public static final int actionIntentShare=0x7f06008b;
-        public static final int actionLoad=0x7f060099;
+        public static final int actionLoad=0x7f06009d;
         public static final int actionNormalMap=0x7f060092;
         public static final int actionRotate=0x7f060084;
         public static final int actionSatelliteMap=0x7f060093;
@@ -1181,8 +1182,12 @@ containing a value of this type.
         public static final int actionStartBrowser=0x7f06008e;
         public static final int actionStartCamera=0x7f06008f;
         public static final int actionStartForResult=0x7f06008c;
+        public static final int actionStartForeground=0x7f06009a;
+        public static final int actionStartIntentService=0x7f06009c;
         public static final int actionStartListActivity=0x7f06008a;
         public static final int actionStartService=0x7f06008d;
+        public static final int actionStopForeground=0x7f06009b;
+        public static final int actionStopService=0x7f060099;
         public static final int actionTerrainMap=0x7f060094;
         public static final int action_bar=0x7f06001d;
         public static final int action_bar_activity_content=0x7f060018;
@@ -1198,10 +1203,10 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f060031;
         public static final int action_mode_close_button=0x7f060025;
         public static final int activity_chooser_view_content=0x7f060026;
-        public static final int akce1=0x7f06009d;
-        public static final int akce2=0x7f06009e;
-        public static final int akce3=0x7f06009f;
-        public static final int akce4=0x7f0600a1;
+        public static final int akce1=0x7f0600a1;
+        public static final int akce2=0x7f0600a2;
+        public static final int akce3=0x7f0600a3;
+        public static final int akce4=0x7f0600a5;
         public static final int always=0x7f06000f;
         public static final int beginning=0x7f060014;
         public static final int buttonAlert=0x7f060048;
@@ -1230,7 +1235,7 @@ containing a value of this type.
         public static final int fragment=0x7f060075;
         public static final int fragmentContainer=0x7f060074;
         public static final int gridView=0x7f06004a;
-        public static final int group=0x7f0600a0;
+        public static final int group=0x7f0600a4;
         public static final int home=0x7f060017;
         public static final int homeAsUp=0x7f060009;
         public static final int hybrid=0x7f060004;
@@ -1401,10 +1406,11 @@ containing a value of this type.
         public static final int actionbar_menu_intents=0x7f0e0001;
         public static final int actionbar_menu_map=0x7f0e0002;
         public static final int actionbar_menu_notifications=0x7f0e0003;
-        public static final int actionbar_menu_web=0x7f0e0004;
-        public static final int context_menu=0x7f0e0005;
-        public static final int main=0x7f0e0006;
-        public static final int popup_menu=0x7f0e0007;
+        public static final int actionbar_menu_services=0x7f0e0004;
+        public static final int actionbar_menu_web=0x7f0e0005;
+        public static final int context_menu=0x7f0e0006;
+        public static final int main=0x7f0e0007;
+        public static final int popup_menu=0x7f0e0008;
     }
     public static final class plurals {
         public static final int numberOfCars=0x7f0d0000;
@@ -1489,6 +1495,13 @@ containing a value of this type.
         public static final int action_show_notification_activity=0x7f070063;
         public static final int action_show_notification_progress=0x7f070062;
         public static final int action_start_for_result=0x7f070059;
+        public static final int action_start_foreground=0x7f070066;
+        public static final int action_start_intent_service=0x7f070068;
+        /**  Action bar services 
+         */
+        public static final int action_start_service=0x7f070064;
+        public static final int action_stop_foreground=0x7f070067;
+        public static final int action_stop_service=0x7f070065;
         public static final int action_take_photo=0x7f07005c;
         public static final int action_terrain_map=0x7f070056;
         public static final int activity_about_name=0x7f070023;
@@ -1584,7 +1597,7 @@ containing a value of this type.
         public static final int dlg_title_processing=0x7f07003c;
         public static final int empty_list=0x7f070043;
         public static final int hello_world=0x7f070028;
-        public static final int label_about=0x7f070065;
+        public static final int label_about=0x7f07006a;
         public static final int label_enter_address=0x7f070048;
         public static final int label_enter_text=0x7f07002c;
         public static final int label_enter_url=0x7f070035;
@@ -1602,7 +1615,7 @@ containing a value of this type.
         public static final int label_start_activity=0x7f070031;
         public static final int label_ulozit=0x7f070029;
         public static final int malformed_url=0x7f070047;
-        public static final int scroll_view_info=0x7f070064;
+        public static final int scroll_view_info=0x7f070069;
         public static final int toast_smazat=0x7f070037;
         public static final int uvitani=0x7f070039;
         public static final int uvozovky=0x7f07003a;

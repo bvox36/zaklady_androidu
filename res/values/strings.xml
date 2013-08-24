@@ -55,12 +55,12 @@
     <string name="action_back">Zpět</string>
     <string name="action_forward">Vpřed</string>
     <string name="action_home">Domů</string>
-    
+
     <!-- Action bar mapview -->
     <string name="action_normal_map">Normální</string>
     <string name="action_satellite_map">Satelitní</string>
     <string name="action_terrain_map">Terénní</string>
-    
+
     <!-- Action bar intents -->
     <string name="action_list_activity">Zobrazit seznam</string>
     <string name="action_intent_share">Sdílet zprávu</string>
@@ -71,12 +71,19 @@
     <string name="action_send_inent_static">Pošli Intent Static</string>
     <string name="action_send_inent_dynamic">Pošli Intent Dynamic</string>
     <string name="action_send_notification">Zobraz notifikaci</string>
-    
+
     <!-- Action bar notifications -->
     <string name="action_show_normal_notification">Normální notifikace</string>
     <string name="action_show_big_notification">Velká notifikace</string>
     <string name="action_show_notification_progress">Notifikace s progres barem</string>
     <string name="action_show_notification_activity">Notifikace s activity indikátorem</string>
+    
+    <!-- Action bar services -->
+    <string name="action_start_service">Spustit službu</string>
+    <string name="action_stop_service">Zastavit službu</string>
+    <string name="action_start_foreground">Spustit foreground službu</string>
+    <string name="action_stop_foreground">Zastavit foreground službu</string>
+    <string name="action_start_intent_service">Spustit IntentService</string>
     
     <string-array name="mesta_array">
         <item>Praha</item>
@@ -93,6 +100,26 @@
         <item quantity="few">Ve Vaší garáži jsou %d automobily</item>
         <item quantity="other">Ve Vaší garáži je %d automobilů</item>
     </plurals>
+
+    <string-array name="view_types">
+        <item>TextView</item>
+        <item>Button</item>
+        <item>CheckBox</item>
+        <item>RadioButton</item>
+        <item>CheckedTextView</item>
+        <item>Spinner</item>
+        <item>ProgressBar</item>
+        <item>RatingBar</item>
+        <item>SeekBar</item>
+        <item>Switch</item>
+        <item>EditText</item>
+        <item>ImageView</item>
+        <item>ImageButton</item>
+        <item>WebView</item>
+        <item>MapView</item>
+        <item>VideoView</item>
+        <item>TimePicker</item>
+    </string-array>
 
     <string name="scroll_view_info">Potomek třídy FrameLayout, což znamená, že je určen pro vložení jednoho dětského view.
 Dětské view může být libovolně složitý layout libovolného typu, nebo jednoduché View, obecně každý potomek třídy View.
