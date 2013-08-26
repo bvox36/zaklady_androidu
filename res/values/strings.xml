@@ -84,7 +84,17 @@
     <string name="action_start_foreground">Spustit foreground službu</string>
     <string name="action_stop_foreground">Zastavit foreground službu</string>
     <string name="action_start_intent_service">Spustit IntentService</string>
+     
+    <!-- Action bar remote service -->
+    <string name="action_start_remote_service">Spustit vzdálenou službu</string>
+    <string name="action_stop_remote_service">Zastavit vzdálenou službu</string>
     
+    <!-- Action bar asynchronous -->
+    <string name="action_start_worker">Spustit pracovní vlákno</string>
+    <string name="action_start_async_task">Spustit Asynctask</string>
+    <string name="action_stop_async_task">Zrušit Asynctask</string>
+    <string name="action_start_loader">Spustit Loader</string>
+      
     <string-array name="mesta_array">
         <item>Praha</item>
         <item>Brno</item>

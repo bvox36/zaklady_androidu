@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/actionStartWorkerThread"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_start_worker"/>
+    <item
+        android:id="@+id/actionStartAsyncTask"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_start_async_task"/>
+    <item
+        android:id="@+id/actionStopAsyncTask"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_stop_async_task"/>
+    <item
+        android:id="@+id/actionStartLoader"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/action_start_loader"/>
+
+</menu>

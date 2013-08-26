@@ -19,9 +19,9 @@ public class ActivityServices extends Activity {
 
     private DynamicBroadcastReceiver mDynamicBroadcastReceiver;
     private IntentFilter             mIntentFilter;
+
     private CustomService            mCustomService;
     private CustomConnection         mConnection = new CustomConnection();
-    private ListView                 mViewTypesList;
 
     private class CustomConnection implements ServiceConnection {
 
@@ -34,7 +34,7 @@ public class ActivityServices extends Activity {
                     ActivityServices.this, android.R.layout.simple_list_item_1,
                     mCustomService.getViewTypes());
 
-            mViewTypesList.setAdapter(adapter);
+            ((ListView) findViewById(R.id.listView)).setAdapter(adapter);
         }
 
         public void onServiceDisconnected(ComponentName className) {
@@ -47,7 +47,6 @@ public class ActivityServices extends Activity {
         super.onCreate(bundle);
 
         setContentView(R.layout.activity_listview);
-        mViewTypesList = (ListView) findViewById(R.id.listView);
         Utils.getOverflowMenu(this);
 
         mDynamicBroadcastReceiver = new DynamicBroadcastReceiver();
