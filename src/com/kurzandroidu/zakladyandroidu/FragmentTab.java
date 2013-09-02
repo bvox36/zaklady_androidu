@@ -26,8 +26,10 @@ public class FragmentTab extends Fragment {
             color = Color.rgb(255, 0, 0);
         else if (tag.equals("Tab2"))
             color = Color.rgb(0, 255, 0);
-        else
+        else if (tag.equals("Tab3"))
             color = Color.rgb(0, 0, 255);
+        else
+            color = Color.rgb(255, 255, 255);
 
         view.setBackgroundColor(color);
         return view;
