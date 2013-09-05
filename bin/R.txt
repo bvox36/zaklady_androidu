@@ -372,7 +372,6 @@ int id dialog 0x7f060012
 int id disableHome 0x7f06000c
 int id drawer_layout 0x7f060047
 int id dropdown 0x7f060013
-int id editTextAddress 0x7f06007d
 int id editTextMsgToSend 0x7f06004f
 int id editTextNazev 0x7f060056
 int id editTextObsah 0x7f060057
@@ -457,6 +456,7 @@ int id textView22 0x7f060073
 int id textView23 0x7f060074
 int id textView24 0x7f060075
 int id textView25 0x7f060076
+int id textViewAddress 0x7f06007d
 int id textViewCaption 0x7f060085
 int id textViewDescription 0x7f060082
 int id textViewFragmentNumber 0x7f06007b

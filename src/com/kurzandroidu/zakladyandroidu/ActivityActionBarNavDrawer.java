@@ -1,7 +1,8 @@
 package com.kurzandroidu.zakladyandroidu;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.app.FragmentTransaction;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
@@ -58,38 +59,48 @@ public class ActivityActionBarNavDrawer extends Activity implements
     }
 
     @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        // Sync the toggle state after onRestoreInstanceState has occurred.
-        mDrawerToggle.syncState();
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.actionbar_menu_navdrawer, menu);
         return true;
     }
 
-    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
+
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
+        menu.findItem(R.id.actionCamera).setVisible(!drawerOpen);
+        return super.onPrepareOptionsMenu(menu);
+    }
+
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (mDrawerToggle.onOptionsItemSelected(item))
             return true;
 
         switch (item.getItemId()) {
-            case R.id.actionHelp:
-                startActivity(new Intent(this, ActivityAboutCompatible.class));
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
-    @Override
     public void onItemClick(AdapterView<?> parent, View v, int pos, long id) {
-
+        final String town = (String) parent.getItemAtPosition(pos);
+        FragmentTab fragment = new FragmentTab();
+        Bundle args = new Bundle(1);
+        args.putString("tag", town);
+        fragment.setArguments(args);
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.replace(R.id.frame, fragment).commit();
+        mDrawerLayout.closeDrawers();
         return;
-
     }
 }

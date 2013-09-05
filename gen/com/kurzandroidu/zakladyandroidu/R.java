@@ -1233,7 +1233,6 @@ containing a value of this type.
         public static final int disableHome=0x7f06000c;
         public static final int drawer_layout=0x7f060047;
         public static final int dropdown=0x7f060013;
-        public static final int editTextAddress=0x7f06007d;
         public static final int editTextMsgToSend=0x7f06004f;
         public static final int editTextNazev=0x7f060056;
         public static final int editTextObsah=0x7f060057;
@@ -1318,6 +1317,7 @@ containing a value of this type.
         public static final int textView23=0x7f060074;
         public static final int textView24=0x7f060075;
         public static final int textView25=0x7f060076;
+        public static final int textViewAddress=0x7f06007d;
         public static final int textViewCaption=0x7f060085;
         public static final int textViewDescription=0x7f060082;
         public static final int textViewFragmentNumber=0x7f06007b;
